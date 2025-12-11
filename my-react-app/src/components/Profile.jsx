@@ -15,11 +15,11 @@ export default function Profile() {
   };
 
   return (
-    <Box sx={{ bgcolor:"#eef2f7", minHeight:"100vh", py:4 }}>
+    <Box sx={{ bgcolor:"#faebd7 ", minHeight:"100vh", py:4 }}>
 
       {/* HEADER */}
       <Box sx={{
-        bgcolor:"#1b2a41",
+        bgcolor:"#c46210 ",
         color:"white",
         textAlign:"center",
         py:3,
