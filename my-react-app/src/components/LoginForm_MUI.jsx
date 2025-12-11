@@ -26,8 +26,24 @@ export default function LoginForm_MUI() {
       <TextField label="Email" fullWidth sx={{mb:2}} onChange={e=>setEmail(e.target.value)} />
       <TextField label="Password" type="password" fullWidth sx={{mb:2}} onChange={e=>setPassword(e.target.value)} />
 
-      <Button variant="contained" fullWidth onClick={login}>Login</Button>
-      <Button fullWidth sx={{mt:1}} onClick={()=>nav("/signup")}>Create Account</Button>
+      {/* 🔴 RED LOGIN BUTTON */}
+      <Button 
+        variant="contained" 
+        fullWidth 
+        onClick={login}
+        sx={{
+          backgroundColor: "#d32f2f",
+          "&:hover": {
+            backgroundColor: "#b71c1c"
+          }
+        }}
+      >
+        Login
+      </Button>
+
+      <Button fullWidth sx={{mt:1}} onClick={()=>nav("/signup")}>
+        Create Account
+      </Button>
     </Box>
   );
 }
