@@ -3,8 +3,8 @@ import { Grid, Box, Typography, Avatar, Paper, Divider, Chip } from "@mui/materi
 export default function Profile() {
 
   const profile = {
-    image: "/profile.jpg",
-    name: "Janerose Beltz",
+    image: "/mitch.jpg",
+    name: "Saniel Ortega Lucero",
     title: "BSIT Student",
     about: "A passionate learner focused on web development and UI design.",
     skills: ["React", "JavaScript", "HTML", "CSS", "UI/UX"],
