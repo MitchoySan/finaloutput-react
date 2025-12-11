@@ -4,7 +4,7 @@ import SignUp_MUI from "./components/SignUp_MUI";
 import Profile from "./components/Profile";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Car from "./components/Car";   // ✅ Added Car
+import Car from "./components/Car";   
 
 export default function App() {
   return (
