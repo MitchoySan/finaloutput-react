@@ -16,14 +16,39 @@ export default function SignUp_MUI() {
     <Box sx={{ maxWidth: 400, mx: "auto", p: 4 }}>
       <h2>Create Account</h2>
 
-      <TextField label="Email" fullWidth sx={{ mb: 2 }}
-        onChange={(e)=> setAccount({...account, email:e.target.value})} />
+      <TextField 
+        label="Email" 
+        fullWidth 
+        sx={{ mb: 2 }}
+        onChange={(e)=> setAccount({...account, email:e.target.value})} 
+      />
 
-      <TextField label="Password" type="password" fullWidth sx={{ mb: 2 }}
-        onChange={(e)=> setAccount({...account, password:e.target.value})}/>
+      <TextField 
+        label="Password" 
+        type="password" 
+        fullWidth 
+        sx={{ mb: 2 }}
+        onChange={(e)=> setAccount({...account, password:e.target.value})}
+      />
 
-      <Button variant="contained" fullWidth onClick={register}>Sign Up</Button>
-      <Button fullWidth sx={{ mt: 1 }} onClick={()=>nav("/")}>Already have an account?</Button>
+      {/* 🔴 RED SIGN UP BUTTON */}
+      <Button 
+        variant="contained" 
+        fullWidth 
+        onClick={register}
+        sx={{
+          backgroundColor: "#d32f2f",
+          "&:hover": {
+            backgroundColor: "#b71c1c"
+          }
+        }}
+      >
+        Sign Up
+      </Button>
+
+      <Button fullWidth sx={{ mt: 1 }} onClick={()=>nav("/")}>
+        Already have an account?
+      </Button>
     </Box>
   );
 }
